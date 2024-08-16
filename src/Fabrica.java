@@ -1,4 +1,5 @@
 public class Fabrica {
+    //atributos do objeto Fabrica (o que uma fabrica tem)
     private String nome;
     private String endereco;
     private String telefone;
@@ -9,6 +10,7 @@ public class Fabrica {
     private String proprietário;
     private String produto;
 
+    //contrutor completo com todos os atributos
     public Fabrica(String nome, String endereco, String telefone, String site, String cnpj, int quantidadeFuncionarios, int quantidadeFiliais, String proprietário, String produto) {
         this.nome = nome;
         this.endereco = endereco;
@@ -21,10 +23,12 @@ public class Fabrica {
         this.produto = produto;
     }
 
+    //construtor vazio
     public Fabrica() {
 
     }
 
+    //metodos para recuperar os atributos e/ou seta-los
     public String getNome() {
         return nome;
     }
